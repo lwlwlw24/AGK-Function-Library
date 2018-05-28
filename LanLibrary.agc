@@ -38,8 +38,8 @@ function SetUpNetwork(LAN ref as LANType, butimg as string)
 	listenerID as integer
 	
 	//*** Show Host and Client buttons *** 
-	buttons[1] = CreateGUIButton(10,50,10,5,butimg,"Host") 
-	buttons[2] = CreateGUIButton(21,50,10,5,butimg,"Client") 
+	buttons[1] = CreateGUIButton(10,50,10,5,butimg,"Host", fontID) 
+	buttons[2] = CreateGUIButton(21,50,10,5,butimg,"Client", fontID) 
 	listenerID = CreateBroadcastListener(45631)
 	repeat 
 		if GetBroadcastMessage(listenerID) and hosted = 0

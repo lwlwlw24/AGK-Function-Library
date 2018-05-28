@@ -32,7 +32,7 @@ endfunction
 function UpdateHealthBar(bar as HealthBarType)
 	SetSpriteScale(bar.sprBar, bar.percentage, 1)
 	SetTextString(bar.sprText, Str(bar.healthMax * bar.percentage, 0))
-	Sync()
+	//Sync()
 	//SetSpriteSize(bar.sprBar, (bar.sizeX * bar.percentage / 100.0), bar.sizeY)
 endfunction
 
